@@ -83,6 +83,7 @@
     [responseLabel setText:[NSString stringWithFormat:@"Bonjour, le terminal est un %@", result]];
 }
 
+
 -(void)drawFromOrientation:(UIInterfaceOrientation)o {
     
     if(o == UIInterfaceOrientationLandscapeLeft || o == UIInterfaceOrientationLandscapeRight){
