@@ -15,13 +15,16 @@
 		CE459F4D19277F1C0023A559 /* STPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE459F4C19277F1C0023A559 /* STPAppDelegate.m */; };
 		CE459F5019277F1C0023A559 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE459F4E19277F1C0023A559 /* Main_iPhone.storyboard */; };
 		CE459F5319277F1C0023A559 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE459F5119277F1C0023A559 /* Main_iPad.storyboard */; };
-		CE459F5619277F1C0023A559 /* STPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE459F5519277F1C0023A559 /* STPViewController.m */; };
+		CE459F5619277F1C0023A559 /* STPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE459F5519277F1C0023A559 /* STPViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE459F5819277F1C0023A559 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE459F5719277F1C0023A559 /* Images.xcassets */; };
 		CE459F5F19277F1C0023A559 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE459F5E19277F1C0023A559 /* XCTest.framework */; };
 		CE459F6019277F1C0023A559 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE459F3C19277F1C0023A559 /* Foundation.framework */; };
 		CE459F6119277F1C0023A559 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE459F4019277F1C0023A559 /* UIKit.framework */; };
 		CE459F6919277F1C0023A559 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE459F6719277F1C0023A559 /* InfoPlist.strings */; };
 		CE459F6B19277F1C0023A559 /* WhoAmITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE459F6A19277F1C0023A559 /* WhoAmITests.m */; };
+		CED6589E192781F700AAF623 /* STPMyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED6589D192781F700AAF623 /* STPMyView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CED658A01927889300AAF623 /* bg_2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED6589F1927889300AAF623 /* bg_2048.jpg */; };
+		CED658A219278DEE00AAF623 /* Apple_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CED658A119278DEE00AAF623 /* Apple_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		CE459F6619277F1C0023A559 /* WhoAmITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhoAmITests-Info.plist"; sourceTree = "<group>"; };
 		CE459F6819277F1C0023A559 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE459F6A19277F1C0023A559 /* WhoAmITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhoAmITests.m; sourceTree = "<group>"; };
+		CED6589C192781F700AAF623 /* STPMyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPMyView.h; sourceTree = "<group>"; };
+		CED6589D192781F700AAF623 /* STPMyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPMyView.m; sourceTree = "<group>"; };
+		CED6589F1927889300AAF623 /* bg_2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_2048.jpg; sourceTree = "<group>"; };
+		CED658A119278DEE00AAF623 /* Apple_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +129,8 @@
 				CE459F5519277F1C0023A559 /* STPViewController.m */,
 				CE459F5719277F1C0023A559 /* Images.xcassets */,
 				CE459F4319277F1C0023A559 /* Supporting Files */,
+				CED6589C192781F700AAF623 /* STPMyView.h */,
+				CED6589D192781F700AAF623 /* STPMyView.m */,
 			);
 			path = WhoAmI;
 			sourceTree = "<group>";
@@ -129,6 +138,8 @@
 		CE459F4319277F1C0023A559 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CED658A119278DEE00AAF623 /* Apple_logo.png */,
+				CED6589F1927889300AAF623 /* bg_2048.jpg */,
 				CE459F4419277F1C0023A559 /* WhoAmI-Info.plist */,
 				CE459F4519277F1C0023A559 /* InfoPlist.strings */,
 				CE459F4819277F1C0023A559 /* main.m */,
@@ -233,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE459F5319277F1C0023A559 /* Main_iPad.storyboard in Resources */,
+				CED658A219278DEE00AAF623 /* Apple_logo.png in Resources */,
+				CED658A01927889300AAF623 /* bg_2048.jpg in Resources */,
 				CE459F5819277F1C0023A559 /* Images.xcassets in Resources */,
 				CE459F5019277F1C0023A559 /* Main_iPhone.storyboard in Resources */,
 				CE459F4719277F1C0023A559 /* InfoPlist.strings in Resources */,
@@ -256,6 +269,7 @@
 			files = (
 				CE459F4D19277F1C0023A559 /* STPAppDelegate.m in Sources */,
 				CE459F4919277F1C0023A559 /* main.m in Sources */,
+				CED6589E192781F700AAF623 /* STPMyView.m in Sources */,
 				CE459F5619277F1C0023A559 /* STPViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +487,7 @@
 				CE459F7019277F1C0023A559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE459F7119277F1C0023A559 /* Build configuration list for PBXNativeTarget "WhoAmITests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +496,7 @@
 				CE459F7319277F1C0023A559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

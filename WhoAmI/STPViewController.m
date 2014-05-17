@@ -7,8 +7,13 @@
 //
 
 #import "STPViewController.h"
+#import "STPMyView.h"
 
-@interface STPViewController ()
+@interface STPViewController () {
+    
+    UIView *mainView;
+    
+}
 
 @end
 
@@ -18,6 +23,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //construct view
+    mainView = [[STPMyView alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    [[self view] addSubview:mainView];
+    [mainView release];
 }
 
 - (void)didReceiveMemoryWarning
