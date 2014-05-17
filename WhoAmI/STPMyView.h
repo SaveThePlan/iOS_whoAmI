@@ -11,5 +11,6 @@
 @interface STPMyView : UIView
 
 -(void)buttonAction;
+-(void)drawFromOrientation:(UIInterfaceOrientation)o;
 
 @end

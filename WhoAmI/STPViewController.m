@@ -11,7 +11,7 @@
 
 @interface STPViewController () {
     
-    UIView *mainView;
+    STPMyView *mainView;
     
 }
 
@@ -34,6 +34,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    [mainView drawFromOrientation:toInterfaceOrientation];
 }
 
 @end
